@@ -1,0 +1,38 @@
+{
+    // Giảm mức sử dụng bộ nhớ của TypeScript server
+    "typescript.tsserver.maxTsServerMemory": 1024,
+  
+    // Không theo dõi thay đổi trong node_modules, dist, .git để giảm RAM
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/dist/**": true,
+      "**/.git/**": true,
+      "**/build/**": true,
+      "**/.next/**": true
+    },
+  
+    // Không search trong thư mục lớn
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.next": true
+    },
+  
+    // Tắt Git nếu không cần thiết (nếu không xài git trong VSCode)
+    "git.enabled": false,
+  
+    // Tự động lưu để tránh giữ quá nhiều tab dirty
+    "files.autoSave": "off",
+  
+    // Tắt update extension tự động nếu không cần
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+  
+    // Tắt preview minimap (nếu muốn tiết kiệm thêm RAM)
+    "editor.minimap.enabled": false,
+  
+    // Tắt suggestion preview (nếu máy yếu)
+    "editor.suggest.preview": false
+  }
+  
